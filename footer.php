@@ -1,9 +1,12 @@
+<?php
+include"loginscript.php"; 
+// include"logout.php";?>
 <!-- /.container-fluid-->
     <!-- /.content-wrapper-->
     <footer class="sticky-footer">
       <div class="container">
         <div class="text-center">
-          <small>Help Desk</small>
+          <a>Help Desk</a>
         </div>
       </div>
     </footer>
@@ -23,8 +26,10 @@
           </div>
           <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
           <div class="modal-footer">
-            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-            <a class="btn btn-primary" href="login.html">Logout</a>
+          <form method="post" action="logout.php">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>            
+            <button type="submit" class="btn btn-primary"  name="logout">Logout</button>
+            </form >
           </div>
         </div>
       </div>

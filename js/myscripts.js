@@ -15,4 +15,12 @@
       $('body').toggleClass('bg-dark bg-light');
     });
 
- //   </script>
+    function isPasswordMatch() {
+      //uses id to check if they match
+      var password = $("#upass").val();
+      var confirmPassword = $("#cpass").val();
+    
+      if (password != confirmPassword) $("#divCheckPassword").html("Passwords do not match!");
+      else $("#divCheckPassword").html("Passwords match.");
+    }
+    
